@@ -21,19 +21,18 @@ A Maven WAR web application using Java 17, Tomcat 10.1, Hibernate ORM 6.6, Jakar
 
 ## Setup
 
-1. Extract the ZIP.
-2. Open MySQL Workbench and run `database/create_database.sql`, or run:
+1. Open MySQL Workbench and run `database/create_database.sql`, or run:
 
    ```sql
    CREATE DATABASE student_attendance CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    ```
 
-3. Open `src/main/resources/hibernate.properties` and set the correct MySQL username and password. The default username is `root` and the default password is blank. Do not leave the default if your MySQL account uses a password.
-4. In Eclipse, choose **File → Import → Maven → Existing Maven Projects**. Select the extracted `StudentAttendanceSystem` folder and finish the import.
-5. Right-click the project → **Maven → Update Project…** and select the project.
-6. Right-click the project → **Properties → Web Project Settings** and set **Context root** to `StudentAttendanceSystem` (if Eclipse shows a different value).
-7. Add the project to a Tomcat 10.1 server: in the **Servers** tab, right-click Tomcat → **Add and Remove…** → add this project.
-8. Start Tomcat. Hibernate creates or updates the `students` and `attendance` tables after the first request that initializes Hibernate.
+2. Open `src/main/resources/hibernate.properties` and set the correct MySQL username and password. The default username is `root` and the default password is blank. Do not leave the default if your MySQL account uses a password.
+3. In Eclipse, choose **File → Import → Maven → Existing Maven Projects**. Select the extracted `StudentAttendanceSystem` folder and finish the import.
+4. Right-click the project → **Maven → Update Project…** and select the project.
+5. Right-click the project → **Properties → Web Project Settings** and set **Context root** to `StudentAttendanceSystem` (if Eclipse shows a different value).
+6. Add the project to a Tomcat 10.1 server: in the **Servers** tab, right-click Tomcat → **Add and Remove…** → add this project.
+7. Start Tomcat. Hibernate creates or updates the `students` and `attendance` tables after the first request that initializes Hibernate.
 
 ## URLs
 
